@@ -145,12 +145,12 @@ address {
   font-style: normal;
 }
 
-img { 
-	width: 100%;
+img {
+  width: 100%;
 }
- 
+
 figure {
-    margin: 0;
+  margin: 0;
 }
 
 .content-wrapper {
@@ -242,11 +242,11 @@ footer .copyright {
 .hero-area {
   display: flex;
   justify-content: center;
-  background-image: url("../img/unplugged-retreat.jpg"); 
+  background-image: url("../img/unplugged-retreat.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; 
-  fallback: #333 ;
+  background-position: center;
+  fallback: #333;
   min-height: 500px;
 }
 
@@ -294,7 +294,7 @@ input[type="button"] {
 /* Features */
 
 .features {
-  background: url('../img/unplugged-retreat-features.jpg');
+  background: url("../img/unplugged-retreat-features.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -322,8 +322,6 @@ input[type="button"] {
   flex-flow: row wrap;
 }
 
-
-
 .features p {
   text-align: center;
   margin: 0;
@@ -350,40 +348,40 @@ input[type="button"] {
 /* ==========================================================================
      About Page
      ========================================================================== */
-  
-  .mission {
-    background-color: #527158;
-    display: flex;
-    justify-content: center;
-  }
 
-  .map figure {
-    width: 100%;
-    height: 0; 
-    padding-bottom: 125%; 
-    overflow: hidden;
-    position: relative;
+.mission {
+  background-color: #527158;
+  display: flex;
+  justify-content: center;
 }
- 
+
+.map figure {
+  width: 100%;
+  height: 0;
+  padding-bottom: 125%;
+  overflow: hidden;
+  position: relative;
+}
+
 .map iframe {
-    width: 100%;
-    height: 100%;
-    position: absolute; 
-    top: 0; 
-    left: 0; 
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-  
-  .contact-section {
-    background-color: #2a423a;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .contact-content p {
-    margin: 0;
-  }
-  
-  /* ==========================================================================
+
+.contact-section {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-content p {
+  margin: 0;
+}
+
+/* ==========================================================================
      FAQ Page
      ========================================================================== */
 
@@ -575,7 +573,7 @@ input[type="button"] {
   }
 
   /* Features */
-  
+
   .features h2 {
     margin-bottom: 20px;
   }
@@ -656,6 +654,10 @@ input[type="button"] {
 
   .contact-section .content-wrapper h2 {
     width: 80%;
+  }
+
+  .map figure {
+    padding-bottom: 45.5%;
   }
 
   .contact-content {
@@ -748,14 +750,13 @@ input[type="button"] {
   }
 
   /* Reviews */
- 
+
   .reviews h2 {
     padding-bottom: 50px;
   }
 
   .reviews article div {
     width: 42%;
-    
   }
 
   footer h4 {
@@ -765,6 +766,10 @@ input[type="button"] {
   /* ==========================================================================
     About Page
     ========================================================================== */
+
+  .map figure {
+    padding-bottom: 37.5%;
+  }
 
   .mission h2,
   .contact-section .content-wrapper h2 {
