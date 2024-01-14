@@ -164,8 +164,17 @@ header {
   display: flex;
   justify-content: center;
   padding: 15px 0;
+  padding-bottom: 24px;
   background-color: #202322;
-   
+
+   position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10em;
+  z-index: 999;
+  box-shadow: 0 1.2rem 3.2rem rgba(18, 18, 18, 0.03);
+    
 }
 
 header .content-wrapper {
@@ -174,6 +183,7 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  
 
  
 }
@@ -188,8 +198,8 @@ header .content-wrapper {
 header nav {
   width: 60%;
   font-size: 1.125em;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-weight: 600;
+  text-transform: uppercase; 
 }
 
 header nav ul {
@@ -200,6 +210,21 @@ header nav ul {
 
 header nav ul li {
   font-size: 1.125em;
+}
+
+a:link,
+a:visited { 
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+a .svg-icon:hover,
+a .svg-icon:active {
+  color: #708e75;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px; 
+ 
 }
 
 footer {
@@ -224,6 +249,7 @@ footer .contact {
 
  footer .social-icons { 
   display: flex;
+  justify-content: center;
   align-items: center;
   gap:2em;
 } 
@@ -242,8 +268,9 @@ footer .social-icons p {
 footer .svg-icon {
  height: 16px; 
  width: 16px;
- 
+ color: #333;
 }
+
 
 footer .copyright {
   margin: 20px 0;
@@ -265,6 +292,8 @@ footer .copyright {
 }
 
 .hero-area h1 {
+  padding-top: 4.8em;
+  padding-bottom: 12em;
   font-size: 2.25em;
   font-family: "Poppins", Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -369,6 +398,10 @@ input[type="button"] {
   justify-content: center;
 }
 
+.mission h2 {
+  padding-top: 6em;
+}
+
 .map figure {
   width: 100%;
   height: 0;
@@ -416,6 +449,8 @@ input[type="button"] {
 .faq h2 {
   margin-bottom: 40px;
   line-height: 1;
+  padding-top: 6em;
+  
 }
 
 .faq-content {
@@ -424,6 +459,7 @@ input[type="button"] {
 
 .faq-content h4 {
   line-height: 1.333;
+  color: #282929;
 }
 
 /* ==========================================================================
@@ -542,6 +578,7 @@ input[type="button"] {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+    
   }
 
   .hero-area {
@@ -554,10 +591,14 @@ input[type="button"] {
 
   header nav {
     width: 20%;
+    
   }
 
   header nav ul {
-    justify-content: space-between;
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    
   }
 
   .header-divider {
@@ -671,6 +712,10 @@ input[type="button"] {
     width: 45%;
   }
 
+  .mission h2 {
+    padding-top: 5em;
+  }
+
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -702,6 +747,8 @@ input[type="button"] {
 
   .faq h2 {
     width: 100%;
+    padding-top: 6em;
+    
   }
 
   .faq h4,
@@ -722,6 +769,12 @@ input[type="button"] {
   /* Header */
   header {
     padding: 15px 0;
+  }
+
+ .hero-area  h1 {
+    padding-top: 3.2em;
+    padding-bottom: 10em;
+
   }
 
   h2 {
@@ -790,6 +843,10 @@ input[type="button"] {
     padding-bottom: 37.5%;
   }
 
+  .mission h2 {
+    padding-top: 3em;
+  }
+
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
@@ -803,9 +860,11 @@ input[type="button"] {
   /* ==========================================================================
     FAQ Page
     ========================================================================== */
-  .faq h2 {
+  
+    .faq h2 {
     width: 100%;
     font-size: 3em;
+    padding-top: 4em;
   }
 
   .faq h4,
