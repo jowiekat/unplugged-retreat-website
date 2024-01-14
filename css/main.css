@@ -165,6 +165,7 @@ header {
   justify-content: center;
   padding: 15px 0;
   background-color: #202322;
+   
 }
 
 header .content-wrapper {
@@ -173,6 +174,8 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+
+ 
 }
 
 .header-divider {
